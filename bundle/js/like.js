@@ -9,7 +9,7 @@
     chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
     IS_MATERIAL = !document.body.id
-    interval = setInterval(attemptLike, 1);
+    attemptLike();
 
     });
     //     // Fetch our options
