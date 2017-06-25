@@ -1,8 +1,8 @@
-var interval;
-
 (function() {
     'use strict';
     var IS_MATERIAL = false,
+    //     options = null,
+         interval = null,
          likeButton = null;
 
     function init() {
@@ -10,6 +10,7 @@ var interval;
   function(request, sender, sendResponse) {
     IS_MATERIAL = !document.body.id
     attemptLike();
+
     });
     //     // Fetch our options
     // }
@@ -23,12 +24,9 @@ var interval;
         }
         if (!likeButton || isLiked()){
         stop();
-        interval = null;
-        console.log("trapped")
-        return
+            return
         }
-        interval = window.setInterval(likeButton.click(),10);
-        console.log("liking")
+        likeButton.click();
     }
 }
 function stop() {
