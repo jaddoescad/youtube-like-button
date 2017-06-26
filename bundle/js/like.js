@@ -23,9 +23,11 @@
             likeButton = document.querySelector('.like-button-renderer-like-button-unclicked')
         }
         if (!likeButton || isLiked()){
+        console.log("stopping...")
         stop();
             return
         }
+        console.log("clicking...")
         likeButton.click();
     }
 }
