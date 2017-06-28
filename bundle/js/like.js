@@ -17,15 +17,15 @@
 
     function attemptLike() {
         if (IS_MATERIAL) {
-            likeButton = document.querySelector('#icon[alt^="like this"]').parentNode.parentNode.parentNode
-        }
+            likeButton = document.querySelector('[aria-label^="like this"]')
+    }
         else {
             likeButton = document.querySelector('.like-button-renderer-like-button-unclicked')
         }
         if (!likeButton || isLiked()){
         console.log("stopping...")
         stop();
-            return
+        return
         }
         console.log("clicking...")
         likeButton.click();
@@ -41,4 +41,6 @@ function stop() {
     }
     window.addEventListener('DOMContentLoaded', init);
 })();
+
+
 
