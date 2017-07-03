@@ -34,8 +34,8 @@
   "commands": {
           "likeButton": {
             "suggested_key": {
-              "default": "Ctrl+Shift+B",
-              "mac": "Command+Shift+B"
+              "default": "Ctrl+Shift+L",
+              "mac": "Command+Shift+L"
             },
             "description": "like youtube video"
           }
