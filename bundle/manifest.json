@@ -1,9 +1,9 @@
 {
-  "name": "YouTube Auto Like",
+  "name": "The Like Button",
   "version": "1.2",
   "manifest_version": 2,
-  "description": "Magically like videos from channels you subscribe to, so you never forget to support your favorite content creators.",
-  "homepage_url": "https://github.com/austencm/youtube-auto-like",
+  "description": "Like Youtube videos by smashing that like button.",
+  //"homepage_url": "https://github.com/austencm/youtube-auto-like",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -11,9 +11,9 @@
   },
   "default_locale": "en",
   "browser_action": {
-    "default_icon": "icons/icon19.png",
-    "default_title": "Open Web Store",
-    "default_popup": "views/popup/popup.html"
+    "default_icon": "icons/icon32.png",
+    "default_title": "Open Web Store"
+    //"default_popup": "views/popup/popup.html"
   },
   "content_scripts": [{
     "matches": ["*://youtube.com/*", "*://*.youtube.com/*"],
@@ -27,15 +27,15 @@
     "*://youtube.com/*", 
     "*://*.youtube.com/*"
   ],
-  "options_ui": {
-    "page": "views/options/options.html",
-    "chrome_style": true
-  },
+  // "options_ui": {
+  //   "page": "views/options/options.html",
+  //   "chrome_style": true
+  // },
   "commands": {
           "likeButton": {
             "suggested_key": {
-              "default": "Ctrl+Shift+Y",
-              "mac": "Command+B"
+              "default": "Ctrl+Shift+B",
+              "mac": "Command+Shift+B"
             },
             "description": "like youtube video"
           }
